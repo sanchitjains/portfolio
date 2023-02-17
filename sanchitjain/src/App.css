@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* Green (#009B4D), tangerine yellow (#FFCC00), ivory (#FAF5E9) */
+/* Dark classic blue (#0A1828), turquoise (#178582), gold (#BFA181) */
+/* #EDC7B7 #EEE2DC #BAB2B5 #123C69 #AC3B61 */
+
+/* NAVBAR */
+
+* {
+  font-family: Nunito,sans-serif;
+  background-color: #EEE2DC;
+  scroll-behavior: smooth;
+}
+.name
+{
+  color: #AC3B61;
+  font-size: x-large;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar
+{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: black;
+  padding: 15px 3%;
+
+}
+.resume
+{
+  background-color: #BAB2B5;
+  border-radius: 18px;
+  color: #123C69;
+  text-decoration: none;
+  padding: 10px  20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.resume .material-icons
+{
+  background-color: #BAB2B5;
+  font-size: larger;
+}
+.resume span
+{
+
+  font-size: large;
+  background-color: #BAB2B5;
+
+}
+
+.resume:hover
+{
+  color: #AC3B61;
+}
+.navbutton
+{
+  color: black;
+  text-decoration: none;
+}
+.navbutton:hover
+{
+  color: #123C69;
+  cursor: pointer;
+}
+@media screen and (width>960px) {
+
+#navmenu
+{
+  visibility: hidden;
+  position: absolute;
+
+}
+.navmenu,.navclose{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 500;
+  width: 60%;
+}
+
+
+
+}
+@media screen and (width<=960px) {
+  
+  #navmenu
+{
+  visibility: visible;
+  font-size: larger;
+  border: none;
+  position: static;
+
+}
+.navmenu
+{
+  visibility: hidden;
+  position: absolute;
+}
+.navclose
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  right: 0;
+  top:50px
+
+}
+  
+}
+/* About */
+#info
+{
+  margin: 20px 11%;
+  padding-top: 120px;
+}
+.about
+{
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.intro
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  min-width: 340px;
+  /* background-color:#AC3B61; */
+
+}
+.intro h1
+{
+font-weight: 500;
+
+  margin: 40px 2px 0px;
+}
+.intro p
+{
+  color: #123C69;
+  font-size: large;
+}
+.mypic
+{
+width: 50%;
+min-width: 340px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mypic img
+{
+  border-radius: 48%;
+
+}
+.cv{
+  background-color: #BAB2B5;
+  color: #123C69;
+  font-size: larger;
+  border: none;
+  font-weight: 600;
+  width: max-content;
+  padding: 16px 30px;
+  border-radius: 20px;
+}
+.cv:hover
+{
+  color: #AC3B61;
+  cursor: pointer;
+
+}
+.details
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.personalinfo
+{
+  width: 34%;
+  min-width: 340px;
+}
+.mydesc
+{
+  width: 65%;
+  min-width: 360px;
+  text-align: justify;
+}
+.mydesc h2 span
+{
+  color: #AC3B61;
+}
+.signature
+{
+  /* background-color: #EDC7B7; */
+  color: rgb(91, 90, 90);
+  margin-top: -16px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: xx-large;
+  width:0px;
+  overflow: hidden;
+  transform: rotate(-1deg);
+  transition: width 4s;
+
+
+
+}
+.mydesc:hover .signature
+{
+  width: 260px;
+  
+}
+
+/* Skills */
+
+#skills
+{
+  margin: 20px 11%;
+  text-align: center;
+}
+
+.tskills
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.skills h1
+{
+  color: #123C69;
+}
+.tskill img
+{ 
+  transition: transform 1.5s;
+
+ 
+}
+.tskill
+{
+  /* color: #BAB2B5; */
+  min-width: 160px;
+}
+.tskill img:hover
+{
+
+  transform:translateY(-20px)
+
+
+}
+/* Projects */
