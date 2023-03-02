@@ -12,6 +12,87 @@
   scroll-behavior: smooth;
 
 }
+/* mario */
+#bulbonnight,#bulboffnight
+{
+  position: relative;
+  align-self: center;
+  border: none;
+  background-color: inherit;
+  transform: rotate(180deg);
+
+
+}
+#bulbonnight
+{
+  border-radius: 100%;
+  box-shadow: -3px -6px 20px;
+  color: #FFCC00;
+  background-color: #ffcc004e;
+
+}
+#bulboffnight
+{
+  color: #d9cea470;
+
+}
+#bulbonday,#bulboffday
+{
+  position: absolute;
+  visibility: hidden;
+  z-index: -2;
+
+}
+
+#marioonday{
+
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+#mariooffday{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+#mariooffnight{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  visibility: visible;
+  background-color: black;
+  opacity: 0.7;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+#marioonnight{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  visibility: hidden;
+
+}
+#marioContainer
+{
+  visibility: visible;
+  position: fixed;
+  top: 20px;
+  margin-top: 60px;
+  z-index: 4;
+  opacity: 1;
+
+
+}
+
+.zeroone
+{
+  color: #61892F;
+  
+}
+
+
 ::-webkit-scrollbar {
   width: .75vw;
   height: .75vw;
