@@ -11,6 +11,7 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  text-align: left;
 
 }
 /* Scroll */
@@ -296,10 +297,11 @@ color: #FFCC00;
 }
 .mypicday,.mypicnight
 {
+
 width: 50%;
 min-width: 340px;
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: center;
 }
 .mypicday img,.mypicnight img

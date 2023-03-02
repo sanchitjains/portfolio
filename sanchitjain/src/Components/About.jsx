@@ -8,10 +8,10 @@ function About({theme})
                     <div className={"intro"+theme}>
                         <h1>Hi,I'm Sanchit Jain.</h1>
                         <p>I am Front End Web Developer and I have knowledge in HTML, CSS, JS, REACT, Node.js and make user-friendly websites.</p>
-                        <button className={'cv'+theme}>Download CV</button>
+                       <a href="https://drive.google.com/uc?export=download&id=1i1Jy0zFz7yJUVq2ezXENW9Lmu-bYFcvH"><button className={'cv'+theme}>Download CV</button></a> 
                     </div>
                     <div className={"mypic"+theme}>
-                            <img width="210" height="280" src={(theme=='day')?myPic:mypic2}  alt="sasf" />
+                            <img width="192" height="256" src={(theme=='day')?myPic:mypic2}  alt="sasf" />
                     </div>
                 </div>
                 <div className={"details"+theme}>
