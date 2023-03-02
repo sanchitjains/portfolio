@@ -7,7 +7,7 @@ import Github from './Components/Github';
 import Contact from './Components/Contact';
 import  Projects  from './Components/Projects';
 import './App.css';
-import Mario from './Components/Mario';
+
 
 function App() {
 
