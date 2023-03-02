@@ -8,9 +8,11 @@ import Contact from './Components/Contact';
 import  Projects  from './Components/Projects';
 import './App.css';
 
+
 function App() {
 
-  const [theme,setTheme]=useState("day");
+  const [theme,setTheme]=useState("night");
+
 
   const handleTheme=()=>
     {
@@ -25,8 +27,11 @@ function App() {
         }
     }
 
+
+
+
   return <div style={{backgroundColor: (theme=='day') ? "#EEE2DC":"#222629" }}>
-        <Navbar handletheme={handleTheme} theme={theme}/>
+        <Navbar handletheme={handleTheme}  theme={theme} />
         <About  theme={theme}/>
         <Skills  theme={theme}/>
         <Projects  theme={theme} />

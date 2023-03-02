@@ -8,10 +8,13 @@
 
 *{
   font-family: Nunito,sans-serif;
-  
+  box-sizing: border-box;
+  margin: 0;
   scroll-behavior: smooth;
+  text-align: left;
 
 }
+/* Scroll */
 ::-webkit-scrollbar {
   width: .75vw;
   height: .75vw;
@@ -294,10 +297,11 @@ color: #FFCC00;
 }
 .mypicday,.mypicnight
 {
+
 width: 50%;
 min-width: 340px;
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: center;
 }
 .mypicday img,.mypicnight img
@@ -314,6 +318,8 @@ justify-content: center;
   width: max-content;
   padding: 16px 30px;
   border-radius: 20px;
+  margin-top: 7px;
+ 
 }
 .cvday
 {
@@ -385,7 +391,7 @@ justify-content: center;
 {
   /* background-color: #EDC7B7; */
   color: rgb(91, 90, 90);
-  margin-top: -16px;
+  margin-top: -10px;
   font-family: 'Brush Script MT', cursive;
   font-size: xx-large;
   width:0px;
@@ -431,10 +437,10 @@ justify-content: center;
   align-items: baseline;
 }
 
-/* .skillsday h1
+#skillsday h1,#skillsnight h1
 {
-  color: #123C69;
-} */
+  padding-bottom: 20px;
+}
 .tskillday img,.tskillnight img
 { 
   transition: transform 1.5s;
