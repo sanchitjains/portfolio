@@ -1,5 +1,5 @@
-import myPic from '../Resources/images/sanchit1.png'
-import mypic2 from '../Resources/images/sanchit2.png'
+import myPic from '../Resources/images/sanchithd2.png'
+import mypic2 from '../Resources/images/sanchithd2.png'
 function About({theme})
 {
     return <>
