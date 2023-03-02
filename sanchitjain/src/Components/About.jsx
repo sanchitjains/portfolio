@@ -11,7 +11,7 @@ function About({theme})
                         <button className={'cv'+theme}>Download CV</button>
                     </div>
                     <div className={"mypic"+theme}>
-                            <img src={(theme=='day')?myPic:mypic2}  alt="sasf" />
+                            <img width="210" height="280" src={(theme=='day')?myPic:mypic2}  alt="sasf" />
                     </div>
                 </div>
                 <div className={"details"+theme}>
