@@ -12,8 +12,7 @@ import Mario from './Components/Mario';
 function App() {
 
   const [theme,setTheme]=useState("night");
-  const [mario,setMario]=useState("off");
-  const [bulb,setBulb]=useState("off")
+
 
   const handleTheme=()=>
     {
@@ -28,32 +27,11 @@ function App() {
         }
     }
 
-    
-  const handlemario=()=>
-  {
-      
-        setMario("on")
 
-       const run= setTimeout(()=>{setMario("off")},6500);
-       const jump= setTimeout(()=>{setBulb("on")},7000)
-  }
-  const handleBulb=()=>
-  {
-      
-      if(bulb=="on")
-      {
-          setBulb("off")
-      }
-      else
-      {
-          handlemario()
-      }
-  }
 
 
   return <div style={{backgroundColor: (theme=='day') ? "#EEE2DC":"#222629" }}>
-        <Navbar handletheme={handleTheme} handleBulb={handleBulb} theme={theme} bulb={bulb}/>
-        <Mario  theme={theme} mario={mario} bulb={bulb} />
+        <Navbar handletheme={handleTheme}  theme={theme} />
         <About  theme={theme}/>
         <Skills  theme={theme}/>
         <Projects  theme={theme} />

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Navbar({handletheme,theme,handleBulb,bulb})
+function Navbar({handletheme,theme})
 {
     const [fill,setFill]=useState("empty")
     const [menu,setMenu]=useState("menu");
